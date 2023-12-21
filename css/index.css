@@ -1,0 +1,18 @@
+/* ---------------產品--------------- */
+.product_block {
+  margin: 50px auto;
+}
+
+.product_content ul {
+  margin-top: 40px;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  gap: 20px;
+}
+
+.product_img img {
+  max-width: 245px;
+}
+

@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Noto+Sans+TC&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <title>梁湯官網第二版</title>
+  </head>
+
+  <body>
+    <header>
+      <!-- 手機版導覽列 -->
+      <button
+        class="btn btn-primary nav_mobile"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasRight"
+        aria-controls="offcanvasRight"
+      >
+        Toggle right offcanvas
+      </button>
+      <div
+        class="offcanvas offcanvas-end"
+        tabindex="-1"
+        id="offcanvasRight"
+        aria-labelledby="offcanvasRightLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 id="offcanvasRightLabel">Offcanvas right</h5>
+          <button
+            type="button"
+            class="btn-close text-reset"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <ul class="nav justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Active</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- 電腦版導覽列 -->
+
+      <nav>
+        <div class="nav_block">
+          <div>
+            <a href="./index.html"
+              ><img
+                src="./images/logo.webp"
+                alt="梁湯logo"
+                width="100px"
+                height="auto"
+                style="padding: 10px"
+            /></a>
+          </div>
+          <ul class="nav justify-content-end nav_item">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                品牌故事
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li><a class="dropdown-item" href="#">關於梁湯</a></li>
+                <li><a class="dropdown-item" href="#">梁湯資訊</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                產品介紹
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li><a class="dropdown-item" href="#">我們的湯</a></li>
+                <li><a class="dropdown-item" href="#">線上菜單</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >好評推薦</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Q&A</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >商品訂購</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- 幻燈片banner -->
+    <div
+      id="carouselExampleSlidesOnly"
+      class="carousel slide carousel_block"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="./images/index_banner_desktop1.webp"
+            class="d-block w-100"
+            alt="梁湯介紹圖1"
+            width="100%"
+            height="auto"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="./images/index_banner_desktop2.webp"
+            class="d-block w-100"
+            alt="梁湯介紹圖2"
+            width="100%"
+            height="auto"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- 產品 -->
+    <section class="product_block">
+      <div class="block_title">
+        <img
+          src="./images/title_icon.svg"
+          alt="標題icon"
+          height="100%"
+          width="auto"
+        />
+        <span>熱銷產品</span>
+      </div>
+
+      <div class="product_content">
+        <ul>
+          <li class="product_img" style="text-align: center">
+            <img
+              src="./images/product_1.webp"
+              alt="花膠金蟲草螺片紅蘿蔔龍骨湯"
+              width="100%"
+              height="auto"
+            />
+            <div style="display: inline-flex; flex-direction: column">
+              <span>花膠金蟲草螺片紅蘿蔔龍骨湯</span>
+              <span>NT$420</span>
+            </div>
+          </li>
+          <li class="product_img" style="text-align: center">
+            <img
+              src="./images/product_2.webp"
+              alt="山藥沙參玉竹紅棗麥冬瘦肉湯"
+              width="100%"
+              height="auto"
+            />
+            <div style="display: inline-flex; flex-direction: column">
+              <span>山藥沙參玉竹紅棗麥冬瘦肉湯</span>
+              <span>NT$220</span>
+            </div>
+          </li>
+          <li class="product_img" style="text-align: center">
+            <img
+              src="./images/product_3.webp"
+              alt="哈密瓜老母雞海螺片花膠湯"
+              width="100%"
+              height="auto"
+            />
+            <div style="display: inline-flex; flex-direction: column">
+              <span>哈密瓜老母雞海螺片花膠湯</span>
+              <span>NT$220</span>
+            </div>
+          </li>
+          <li class="product_img" style="text-align: center">
+            <img
+              src="./images/product_1.webp"
+              alt="花膠金蟲草螺片紅蘿蔔龍骨湯"
+              width="100%"
+              height="auto"
+            />
+            <div style="display: inline-flex; flex-direction: column">
+              <span>花膠金蟲草螺片紅蘿蔔龍骨湯</span>
+              <span>NT$440</span>
+            </div>
+          </li>
+        </ul>
+
+        <a href="" class="a_title">
+          <div
+            style="
+              display: inline-flex;
+              align-items: center;
+              gap: 7px;
+              float: right;
+              margin-top: 40px;
+            "
+          >
+            <p>前往訂購</p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="8"
+              height="13"
+              viewBox="0 0 8 13"
+              fill="none"
+              class="title_icon"
+              style="margin-top: 2px"
+            >
+              <path
+                d="M1 0.5L7 6.5L1 12.5"
+                stroke="black"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- 部落格 -->
+    <section class="blogger_block">
+      <div class="block_title">
+        <img
+          src="./images/title_icon.svg"
+          alt="標題icon"
+          height="100%"
+          width="auto"
+          class="title_icon"
+        />
+        <span>好評推薦</span>
+      </div>
+
+      <ul class="blogger_content">
+        <li>
+          <p style="text-align: end; margin-bottom: 100px">2023.08.20</p>
+          <div style="display: flex; flex-direction: column; gap: 30px">
+            <p>samMYchelin專業老食說</p>
+            <p>台北松山區【台北小巨蛋站】梁湯良湯港式煲湯.鍋物</p>
+          </div>
+        </li>
+        <li>
+          <p style="text-align: end; margin-bottom: 100px">2023.07.22</p>
+          <div style="display: flex; flex-direction: column; gap: 30px">
+            <p>ANIKO美味人生</p>
+            <p>
+              【台北美食】梁湯良湯港式煲湯鍋物。結合港式煲湯的養顏美鍋！金湯花膠雞一喝上癮～
+            </p>
+          </div>
+        </li>
+        <li>
+          <p style="text-align: end; margin-bottom: 100px">2023.03.04</p>
+          <div style="display: flex; flex-direction: column; gap: 30px">
+            <p>樂佩享生活</p>
+            <p>
+              <台北美食>梁湯良湯港式煲湯.鍋物|梁心湯,良心湯,喝得到濃郁鮮美湯頭|
+            </p>
+          </div>
+        </li>
+        <li>
+          <p style="text-align: end; margin-bottom: 100px">2023.02.03</p>
+          <div style="display: flex; flex-direction: column; gap: 30px">
+            <p>samMYchelin專業老食說</p>
+            <p>梁湯良湯 Leung Soup 》菜單裡的花膠雞煲湯火鍋令人想再訪</p>
+          </div>
+        </li>
+      </ul>
+
+      <a href="" class="a_title">
+        <div
+          style="
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+            float: right;
+            margin-top: 40px;
+          "
+        >
+          <p>查看更多</p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="8"
+            height="13"
+            viewBox="0 0 8 13"
+            fill="none"
+            class="title_icon"
+            style="margin-top: 2px"
+          >
+            <path
+              d="M1 0.5L7 6.5L1 12.5"
+              stroke="black"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+      </a>
+    </section>
+
+    <!-- youtube介紹 -->
+    <section class="youtube_block">
+      <div class="youtube">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/NM92pZkYhSM?si=Ao8aZpEo2ACSrw_W"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+      <section class="footer_block">
+        <div
+          class="fb-page"
+          data-href="https://www.facebook.com/profile.php?id=100087664532437"
+          data-width="380"
+          data-hide-cover="false"
+          data-show-facepile="false"
+        ></div>
+
+        <ul class="footer_nav">
+          <li>
+            <ul>
+              <li>品牌故事</li>
+              <li><a href="">關於梁湯</a></li>
+              <li><a href="">梁湯資訊</a></li>
+            </ul>
+          </li>
+          <li>
+            <ul>
+              <li>產品介紹</li>
+              <li><a href="">我們的湯</a></li>
+              <li><a href="">線上菜單</a></li>
+            </ul>
+          </li>
+          <li><a href="">好評推薦</a></li>
+          <li><a href="">Q&A</a></li>
+          <li><a href="">商品訂購</a></li>
+        </ul>
+
+        <ul class="footer_info">
+          <li><span>地址：台北市松山區八德路二段451巷1號</span></li>
+          <li style="display: flex; justify-content: space-between">
+            <span>營業時間：</span>
+            <span style="flex-grow: 1">
+              中午12:00 - 15:00<br />下午17:30 - 21:30
+            </span>
+          </li>
+          <li><span>訂位專線：02-2772-3838</span></li>
+          <li>
+            <ul style="display: flex; gap: 30px">
+              <li><img src="./images/phone.svg" alt="" /></li>
+              <li><img src="./images/media_fb.svg" alt="" /></li>
+              <li><img src="./images/media_ig.svg" alt="" /></li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+      <p
+        style="
+          font-size: 14px;
+          color: #000000;
+          font-weight: bold;
+          text-align: center;
+          background-color: #fff;
+          padding: 5px;
+          letter-spacing: 0.4px;
+        "
+      >
+        Copyright © 2023 梁湯良湯 All Rights Reserved
+        Reserved.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;隱私權政策
+      </p>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+
+  <div id="fb-root"></div>
+  <script
+    async
+    defer
+    crossorigin="anonymous"
+    src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v18.0&appId=968826387459818"
+    nonce="IilMTnyJ"
+  ></script>
+</html>
