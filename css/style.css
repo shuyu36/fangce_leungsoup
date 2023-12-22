@@ -339,8 +339,11 @@ footer {
   .blogger_content {
     grid-template-columns: repeat(2, 1fr);
   }
-
+  
   /* ------------------------footer------------------------ */
+  .fb-page {
+    width: 100%;
+  }
   .footer_block {
     flex-direction: column;
     gap: 30px;
@@ -349,8 +352,4 @@ footer {
 }
 
 @media (max-width: 330px) {
-  .fb-page {
-    width: 240px;
-  
-}
 }
