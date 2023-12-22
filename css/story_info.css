@@ -1,0 +1,45 @@
+.view_360 {
+  margin-top: 50px;
+}
+.view_360 iframe {
+}
+
+.line {
+  max-width: 1208px;
+  height: 3px;
+  background: #65513a;
+  margin: 120px auto;
+}
+
+.Information {
+  display: flex;
+  padding: 0 30px;
+  gap: 10px;
+}
+
+.info_title {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.Information_text {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  justify-content: space-around;
+  height: 100%;
+  letter-spacing: 5px;
+}
+
+
+
+@media (max-width: 576px) {
+    .line {
+        margin: 50px auto;
+    }
+    .Information {
+        gap: 30px;
+        flex-direction: column;
+    }
+
+}

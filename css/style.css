@@ -235,6 +235,11 @@ footer {
   flex-direction: column;
   gap: 7px;
 }
+.fb-page {
+  max-width: 100%;
+  width: 300px; /* 设置您期望的初始宽度 */
+}
+
 
 /* RWD */
 
@@ -343,5 +348,9 @@ footer {
   }
 }
 
-@media (max-width: 414px) {
+@media (max-width: 330px) {
+  .fb-page {
+    width: 240px;
+  
+}
 }
