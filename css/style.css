@@ -121,37 +121,58 @@ nav {
   transition: background 0.8s ease, border-color 0.8s ease, color 0.8s ease;
 }
 
+.blogger_firsttext {
+  text-align: end;
+  margin-bottom: 100px;
+}
+
+.bloger_title {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.blogger_content li a {
+  color: #fff;
+}
 
 .blogger_content li:nth-child(1) {
-    background-image: url(../images/blogger_1.webp);
+  background-image: url(../images/blogger_1.webp);
 }
 
 .blogger_content li:nth-child(2) {
-    background-image: url(../images/blogger_2.webp);
+  background-image: url(../images/blogger_2.webp);
 }
 .blogger_content li:nth-child(3) {
-    background-image: url(../images/blogger_3.webp);
+  background-image: url(../images/blogger_3.webp);
 }
 .blogger_content li:nth-child(4) {
-    background-image: url(../images/blogger_4.webp);
+  background-image: url(../images/blogger_4.webp);
 }
 
-.blogger_content li:hover{
-    background-image: none;
-    background: white;
-    border-image: linear-gradient(180deg, #8E6D45 0%, #7E5730 66.66%, #756C54 93.75%);
-    border-image-slice: 1;
-    border-width: 13px;
-    border-style: solid;
-    color: #633D17;
-    font-weight: 700;
+.blogger_content li:hover {
+  background-image: none;
+  background: white;
+  border-image: linear-gradient(
+    180deg,
+    #8e6d45 0%,
+    #7e5730 66.66%,
+    #756c54 93.75%
+  );
+  border-image-slice: 1;
+  border-width: 13px;
+  border-style: solid;
+  color: #633d17;
+  font-weight: 700;
 }
 
-
+.blogger_content li:hover a {
+  color: #633d17;
+}
 
 /* ------------------------YOUTUBE------------------------ */
 .youtube_block {
-  max-width: 1000px;
+  max-width: 1120px;
+  width: 100%;
   margin: 150px auto 100px auto;
 }
 
@@ -208,8 +229,111 @@ footer {
 }
 
 /* RWD */
-@media only screen and (max-width: 540px) {
+
+@media (max-width: 1400px) {
+}
+@media (max-width: 1200px) {
+}
+@media (max-width: 1024px) {
+  /* ------------------------字體大小------------------------ */
+  p,
+  span {
+    font-size: 13px;
+  }
+  /* ------------------------導覽列------------------------ */
+  .nav_item {
+    gap: 30px;
+  }
+  /* ------------------------部落格------------------------ */
+
+  .blogger_firsttext {
+    margin-bottom: 60px;
+  }
+  .blogger_content li {
+    height: 270px;
+  }
+  /* ------------------------footer------------------------ */
+  .footer_block {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+  .footer_nav {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 912px) {
+  /* ------------------------導覽列------------------------ */
+  .nav_block img {
+    width: 80px;
+  }
+  .nav-link {
+    font-size: 14px;
+  }
+  .dropdown-item {
+    font-size: 14px;
+  }
+}
+@media (max-width: 820px) {
+  /* ------------------------字體大小------------------------ */
+  p,
+  span {
+    font-size: 12px;
+  }
+  /* ------------------------部落格------------------------ */
+  .blogger_content li {
+    height: 240px;
+  }
+  .blogger_firsttext {
+    margin-bottom: 50px;
+  }
+  .bloger_title {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  /* ------------------------導覽列------------------------ */
   .nav_mobile {
     display: block;
   }
+  .nav_item {
+    display: none;
+  }
+  .offcanvas-header {
+    justify-content: flex-end;
+  }
+
+  /* ------------------------部落格------------------------ */
+  .blogger_content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 576px) {
+  /* ------------------------整體寬度------------------------ */
+
+  .nav_block {
+    padding: 0 20px;
+  }
+  section {
+    padding: 0 20px;
+  }
+  .footer_block {
+    padding: 20px;
+  }
+  /* ------------------------部落格------------------------ */
+  .blogger_content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* ------------------------footer------------------------ */
+  .footer_block {
+    flex-direction: column;
+    gap: 30px;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 414px) {
 }
