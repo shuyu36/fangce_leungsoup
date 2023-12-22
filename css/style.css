@@ -2,6 +2,7 @@ body {
   font-family: "Noto Sans TC", "Montserrat", sans-serif, Verdana;
   color: #000;
   background-color: rgb(253, 253, 253);
+  letter-spacing: 0.9px;
 }
 
 a:hover {
@@ -33,7 +34,7 @@ ul {
 section {
   max-width: 1320px;
   margin: auto;
-  margin: 100px auto;
+  margin: 50px auto;
   padding: 0 50px;
 }
 
@@ -45,7 +46,7 @@ section {
 .nav_mobile {
   display: none;
 }
-nav {
+.nav_ {
   background-image: url(../images/nav_bg.webp);
   width: 100%;
 }
@@ -86,6 +87,10 @@ nav {
 
 /* ------------------------title區塊------------------------ */
 
+.top_banner {
+}
+/* ------------------------title區塊------------------------ */
+
 .block_title {
   display: flex;
   align-items: center;
@@ -99,6 +104,9 @@ nav {
 }
 
 /* ---------------部落格--------------- */
+.blogger_block {
+  margin: 100px auto;
+}
 
 .blogger_content {
   margin-top: 40px;
