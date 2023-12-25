@@ -254,7 +254,7 @@ footer {
   }
   /* ------------------------導覽列------------------------ */
   .nav_item {
-    gap: 30px;
+    gap: 20px;
   }
   /* ------------------------部落格------------------------ */
 
@@ -321,7 +321,7 @@ footer {
 
   .offcanvas-header {
     justify-content: flex-end;
-    padding: 20px 50px;
+    padding: 20px 67px;
     height: 77.13px;
   }
   .nav {
@@ -348,11 +348,16 @@ footer {
   }
 }
 @media (max-width: 576px) {
-  /* ------------------------整體寬度------------------------ */
-
+  /* ------------------------導覽列------------------------ */
+  .offcanvas-header {
+    justify-content: flex-end;
+    padding: 20px 37px;
+    height: 77.13px;
+  }
   .nav_block {
     padding: 0 20px;
   }
+  /* ------------------------整體寬度------------------------ */
   section {
     padding: 0 20px;
   }
