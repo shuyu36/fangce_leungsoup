@@ -25,7 +25,222 @@
     <header>
       <!-- 電腦版導覽列 -->
 
+      <nav class="nav_">
+        <div class="nav_block">
+          <div>
+            <a href="./index.html"
+              ><img
+                src="./images/logo.webp"
+                alt="梁湯logo"
+                class="top_logo"
+                width="100px"
+                height="auto"
+                style="padding: 10px"
+            /></a>
+          </div>
+          <ul class="nav justify-content-end nav_item">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                品牌故事
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li>
+                  <a class="dropdown-item" href="./story_about.html"
+                    >關於梁湯</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./story_info.html">梁湯資訊</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                產品介紹
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li>
+                  <a class="dropdown-item" href="./product_introduce.html"
+                    >我們的湯</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./product_menu.html"
+                    >線上菜單</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="./reviews.html"
+                >好評推薦</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./QA.html"
+                >Q&A</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >商品訂購</a
+              >
+            </li>
+          </ul>
+
+          <!-- 手機版導覽列 -->
+          <img
+            class="nav_mobile"
+            src="./images/menu.svg"
+            alt=""
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasRight"
+            aria-controls="offcanvasRight"
+            style="width: 30px; height: auto; cursor: pointer"
+            width="30px"
+            height="auto"
+          />
+          <!-- </button> -->
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasRight"
+            aria-labelledby="offcanvasRightLabel"
+          >
+            <div class="offcanvas-header">
+              <img
+                src="./images/close.svg"
+                alt=""
+                type="button"
+                class="text-reset"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+                style="width: 30px; height: auto"
+              />
+            </div>
+            <div class="offcanvas_block">
+              <div
+                style="
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: space-between;
+                  height: 100%;
+                "
+              >
+                <div>
+                  <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                      <a
+                        class="nav-link active"
+                        aria-current="page"
+                        href="./story_about.html"
+                        >關於梁湯</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./story_info.html">梁湯資訊</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./product_introduce.html"
+                        >我們的湯</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./product_menu.html"
+                        >線上菜單</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./reviews.html">好評推薦</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./QA.html">常見問題</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">商品訂購</a>
+                    </li>
+                  </ul>
+                  <img
+                    src="./images/nav_bg_mobile.webp"
+                    alt="手機板導覽列背景圖"
+                    id="nav_bg_mobile"
+                  />
+                </div>
+
+                <ul
+                  style="
+                    display: flex;
+                    gap: 30px;
+                    justify-content: center;
+                    margin-bottom: 50px;
+                  "
+                >
+                  <li>
+                    <a href="tel:0227723838" target="_blank"
+                      ><img
+                        src="./images/phone.svg"
+                        alt="電話"
+                        width="30px"
+                        height="auto"
+                    /></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.facebook.com/profile.php?id=100087664532437"
+                      target="_blank"
+                    >
+                      <img
+                        src="./images/media_fb.svg"
+                        alt="facebook"
+                        width="30px"
+                        height="auto"
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.instagram.com/Leungsoup?fbclid=IwAR0KPX_0607RWz-Fuo9ja3zRaT7bWzGeNbKjeWF5PGK0wPqtfl8TEw-6k2Y"
+                      target="_blank"
+                    >
+                      <img
+                        src="./images/media_ig.svg"
+                        alt="instagram"
+                        width="30px"
+                        height="auto"
+                      />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
     </header>
+
     <div class="top_banner">
       <img
         src="./images/about_banner_desktop.webp"

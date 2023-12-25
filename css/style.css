@@ -208,6 +208,7 @@ iframe {
 
 footer {
   background: #e5e1d7;
+  margin-top: 80px;
 }
 
 .footer_block {
@@ -273,11 +274,14 @@ footer {
   .footer_nav {
     font-size: 13px;
   }
+  .footer_info {
+    align-items: center;
+  }
 }
 
 @media (max-width: 912px) {
   /* ------------------------導覽列------------------------ */
-  .nav_block img {
+  .top_logo {
     width: 80px;
   }
   .nav-link {
@@ -320,14 +324,14 @@ footer {
   }
 
   .offcanvas-header {
-    justify-content: flex-end;
-    padding: 20px 67px;
+    /* justify-content: flex-end; */
+    padding: 20px 50px;
     height: 77.13px;
   }
   .nav {
     flex-direction: row-reverse;
     text-decoration: underline;
-    gap: 25px;
+    gap: 45px;
     padding: 50px 20px;
   }
   .offcanvas_block {
@@ -350,12 +354,18 @@ footer {
 @media (max-width: 576px) {
   /* ------------------------導覽列------------------------ */
   .offcanvas-header {
-    justify-content: flex-end;
-    padding: 20px 37px;
+    padding: 20px;
     height: 77.13px;
   }
   .nav_block {
     padding: 0 20px;
+  }
+  #nav_bg_mobile {
+    width: 50%;
+    height: auto;
+    position: absolute;
+    right: 0;
+    top: 320px;
   }
   /* ------------------------整體寬度------------------------ */
   section {
@@ -376,6 +386,9 @@ footer {
   .footer_block {
     flex-direction: column;
     gap: 30px;
+    align-items: flex-start;
+  }
+  .footer_info {
     align-items: flex-start;
   }
 }
