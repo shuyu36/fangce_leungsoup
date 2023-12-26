@@ -65,35 +65,43 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
- 
-
   // 獲取所有菜單鏈接
-  var menuLinks = document.querySelectorAll(".menu-link");
-  // 為每個菜單鏈接添加點擊事件監聽器
-  menuLinks.forEach(function (link, index) {
-    link.addEventListener("click", function (event) {
-      // 阻止點擊事件冒泡
-      event.stopPropagation();
-      // 獲取 data-target 的值
-      var target = link.getAttribute("data-target");
+  var menuLinks = document.querySelectorAll(".dropdown-item");
+  var pcMenuLinks = document.querySelectorAll(".menu-link");
+  function mapMenuData(menuLinks, type) {
+    // 為每個菜單鏈接添加點擊事件監聽器
+    menuLinks.forEach(function (link, index) {
+      console.log(link);
+      link.addEventListener("click", function (event) {
+        // 阻止點擊事件冒泡
+        // event.stopPropagation();
+        // 獲取 data-target 的值
+        var target = link.getAttribute("data-target");
 
-      // 將所有的 menu-link 移除 active 類別
-      menuLinks.forEach(function (item) {
-        item.classList.remove("active");
+        // // 將所有的 dropdown-item 移除 active 類別
+        // menuLinks.forEach(function (item) {
+        //   item.classList.remove("active");
+        // });
+
+        // // 將當前點擊的 dropdown-item 添加 active 類別
+        // link.classList.add("active");
+
+        // 通過 data-target 的值找到對應的索引
+        var index = Array.from(menuLinks).findIndex(function (item) {
+          return item.getAttribute("data-target") === target;
+        });
+        console.log(target);
+        console.log(index);
+        // 如果找到索引，則導航到相應的 swiper 幻燈片
+        if (index !== -1) {
+          const tempIndex = type === 'pc' ? index :index - 4
+          swiper.slideTo(tempIndex);
+        }
       });
-
-      // 將當前點擊的 menu-link 添加 active 類別
-      link.classList.add("active");
-
-      // 通過 data-target 的值找到對應的索引
-      var index = Array.from(menuLinks).findIndex(function (item) {
-        return item.getAttribute("data-target") === target;
-      });
-
-      // 如果找到索引，則導航到相應的 swiper 幻燈片
-      if (index !== -1) {
-        swiper.slideTo(index);
-      }
     });
-  });
+  }
+
+  mapMenuData(menuLinks, 'mobile')
+  mapMenuData(pcMenuLinks, 'pc')
+
 });
