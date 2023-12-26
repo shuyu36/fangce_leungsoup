@@ -13,6 +13,11 @@
       crossorigin="anonymous"
     />
     <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Noto+Sans+TC&display=swap"
       rel="stylesheet"
     />
@@ -283,392 +288,220 @@
       </div>
 
       <!-----------------菜單輪播----------------->
-
-      <!-- 電腦版照片 -->
-      <div class="menu_desktop_all">
-        <div class="menu_desktop_img carousel_menu">
-          <div
-            id="carouselExampleInterval"
-            class="carousel slide carousel_menuimg"
-            data-bs-interval="false"
-            data-bs-ride="carousel"
-          >
-            <div class="carousel-inner">
-              <div class="carousel-item active" id="menu_1">
-                <img
-                  src="./images/menu_pc_1.webp"
-                  class="d-block w-100"
-                  alt="菜單"
-                />
-              </div>
-              <div class="carousel-item" id="menu_2">
-                <img
-                  src="./images/menu_pc_2.webp"
-                  class="d-block w-100"
-                  alt="菜單"
-                />
-              </div>
-              <div class="carousel-item" id="menu_3">
-                <img
-                  src="./images/menu_pc_3.webp"
-                  class="d-block w-100"
-                  alt="菜單"
-                />
-              </div>
-              <div class="carousel-item" id="menu_4">
-                <img
-                  src="./images/menu_pc_4.webp"
-                  class="d-block w-100"
-                  alt="菜單"
-                />
-              </div>
-              <div class="carousel-item" id="menu_5">
-                <img
-                  src="./images/menu_pc_5.webp"
-                  class="d-block w-100"
-                  alt="菜單"
-                />
-              </div>
-              <div class="carousel-item" id="menu_6">
-                <img
-                  src="./images/menu_pc_6.webp"
-                  class="d-block w-100"
-                  alt="菜單"
-                />
-              </div>
-              <div class="carousel-item" id="menu_7">
-                <img
-                  src="./images/menu_pc_7.webp"
-                  class="d-block w-100"
-                  alt="菜單"
-                />
-              </div>
-              <div class="carousel-item" id="menu_8">
-                <img
-                  src="./images/menu_pc_8.webp"
-                  class="d-block w-100"
-                  alt="菜單"
-                />
-              </div>
-            </div>
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselExampleInterval"
-              data-bs-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselExampleInterval"
-              data-bs-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-
-          <div class="menu_chose_desktop">
-            <p>菜單</p>
-          </div>
-          <div class="menu_item">
-            <ul>
-              <li class="menu-link" data-target="menu_1">關於煲湯</li>
-              <li class="menu-link" data-target="menu_2">港式煲湯</li>
-              <li class="menu-link" data-target="menu_3">單點海鮮</li>
-              <li class="menu-link" data-target="menu_3">單點肉品</li>
-              <li class="menu-link" data-target="menu_4">單點菜品/其他</li>
-              <li class="menu-link" data-target="menu_4">套餐-牛肉</li>
-              <li class="menu-link" data-target="menu_5">套餐-海鮮</li>
-              <li class="menu-link" data-target="menu_5">套餐-豬肉/雞肉</li>
-              <li class="menu-link" data-target="menu_6">梅酒&清酒</li>
-              <li class="menu-link" data-target="menu_6">HOUSE WINE</li>
-              <li class="menu-link" data-target="menu_6">CHAMPAGNE</li>
-              <li class="menu-link" data-target="menu_7">RED WINE</li>
-              <li class="menu-link" data-target="menu_7">WHITE WINE</li>
-              <li class="menu-link" data-target="menu_8">威士忌/白蘭地</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
       <!-- 手機版菜單選項 -->
-      <div class="menu_mobile_all">
+      <div class="menu_mobile">
         <div class="dropdown menu_chose_mobile">
           <button
             class="btn dropdown-toggle"
             type="button"
             id="dropdownMenuButton1"
             data-bs-toggle="dropdown"
-            aria-expanded="false"
           >
             線上菜單
           </button>
           <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
             <li>
-              <a
-                class="dropdown-item menu-link"
-                href="#"
-                data-target="menu_mobile_1"
+              <a class="dropdown-item menu-link unshow" data-target="menu_1"
                 >關於煲湯</a
               >
             </li>
             <li>
-              <a
-                class="dropdown-item menu-link"
-                href="#"
-                data-target="menu_mobile_2"
+              <a class="dropdown-item menu-link" data-target="menu_2"
                 >港式煲湯</a
               >
             </li>
             <li>
-              <a
-                class="dropdown-item menu-link"
-                href="#"
-                data-target="menu_mobile_3"
+              <a class="dropdown-item menu-link" data-target="menu_3"
                 >港式煲湯</a
               >
             </li>
             <li>
-              <a
-                class="dropdown-item menu-link"
-                href="#"
-                data-target="menu_mobile_4"
+              <a class="dropdown-item menu-link" data-target="menu_4"
                 >單點海鮮</a
               >
             </li>
             <li>
-              <a
-                class="dropdown-item menu-link"
-                href="#"
-                data-target="menu_mobile_5"
+              <a class="dropdown-item menu-link" data-target="menu_5"
                 >單點肉品</a
               >
             </li>
             <li>
-              <a
-                class="dropdown-item menu-link"
-                href="#"
-                data-target="menu_mobile_6"
+              <a class="dropdown-item menu-link" data-target="menu_6"
                 >單點菜品/其他</a
               >
             </li>
             <li>
-              <a
-                class="dropdown-item menu-link"
-                href="#"
-                data-target="menu_mobile_7"
+              <a class="dropdown-item menu-link" data-target="menu_7"
                 >套餐-牛肉</a
               >
             </li>
             <li>
-              <a
-                class="dropdown-item menu-link"
-                href="#"
-                data-target="menu_mobile_8"
+              <a class="dropdown-item menu-link" data-target="menu_8"
                 >套餐-海鮮</a
               >
             </li>
             <li>
-              <a
-                class="dropdown-item menu-link"
-                href="#"
-                data-target="menu_mobile_9"
+              <a class="dropdown-item menu-link" data-target="menu_9"
                 >套餐-豬肉/雞肉</a
               >
             </li>
             <li>
-              <a
-                class="dropdown-item menu-link"
-                href="#"
-                data-target="menu_mobile_10"
+              <a class="dropdown-item menu-link" data-target="menu_10"
                 >梅酒&清酒</a
               >
             </li>
             <li>
-              <a
-                class="dropdown-item menu-link"
-                href="#"
-                data-target="menu_mobile_11"
-                >HOUSE WINE</a
+              <a class="dropdown-item menu-link" data-target="menu_11"
+                >HOUSE WINE&CHAMPAGNE</a
               >
             </li>
             <li>
-              <a
-                class="dropdown-item menu-link"
-                href="#"
-                data-target="menu_mobile_12"
-                >CHAMPAGNE</a
-              >
-            </li>
-            <li>
-              <a
-                class="dropdown-item menu-link"
-                href="#"
-                data-target="menu_mobile_13"
+              <a class="dropdown-item menu-link" data-target="menu_12"
                 >RED WINE</a
               >
             </li>
             <li>
-              <a
-                class="dropdown-item menu-link"
-                href="#"
-                data-target="menu_mobile_14"
+              <a class="dropdown-item menu-link" data-target="menu_13"
                 >WHITE WINE</a
               >
             </li>
             <li>
-              <a
-                class="dropdown-item menu-link"
-                href="#"
-                data-target="menu_mobile_15"
+              <a class="dropdown-item menu-link" data-target="menu_14"
                 >威士忌/白蘭地</a
               >
             </li>
           </ul>
         </div>
-
-        <!-- 手機板照片 -->
-        <div class="menu_mobile_img">
-          <div
-            id="carouselExampleMobile"
-            class="carousel slide carousel_menuimg"
-            data-bs-interval="false"
-            data-bs-ride="carousel"
-          >
-            <div class="carousel-inner">
-              <div class="carousel-item active" id="menu_mobile_1">
-                <img
-                  src="./images/menu_mobile_1.webp"
-                  class="d-block w-100"
-                  alt="菜單"
-                />
+      </div>
+      <!-- Swiper-->
+      <div class="menu_desktop">
+        <div class="menu_desktop_img carousel_menu">
+          <div class="menu_chose_desktop">
+            <p>菜單</p>
+          </div>
+          <div class="menu_item">
+            <ul>
+              <li class="menu-link" data-target="menu_1">關於煲湯</li>
+              <li class="menu-link" data-target="menu_2">湯底介紹</li>
+              <li class="menu-link" data-target="menu_3">湯底介紹</li>
+              <li class="menu-link" data-target="menu_4">單點海鮮</li>
+              <li class="menu-link" data-target="menu_5">單點肉品</li>
+              <li class="menu-link" data-target="menu_6">單點菜品/其他</li>
+              <li class="menu-link" data-target="menu_7">套餐-牛肉</li>
+              <li class="menu-link" data-target="menu_8">套餐-海鮮</li>
+              <li class="menu-link" data-target="menu_9">套餐-豬肉/雞肉</li>
+              <li class="menu-link" data-target="menu_10">梅酒&清酒</li>
+              <li class="menu-link" data-target="menu_11">HOUSE WINE&CHAMPAGNE</li>
+              <li class="menu-link" data-target="menu_12">RED WINE</li>
+              <li class="menu-link" data-target="menu_13">WHITE WINE</li>
+              <li class="menu-link" data-target="menu_14">威士忌/白蘭地</li>
+            </ul>
+          </div>
+          <div class="carousel_menuimg">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide" id="menu_1">
+                  <img
+                    src="./images/menu_mobile_1.webp"
+                    class="d-block w-100"
+                    alt="菜單_關於港式煲湯"
+                  />
+                </div>
+                <div class="swiper-slide" id="menu_2">
+                  <img
+                    src="./images/menu_mobile_2.webp"
+                    class="d-block w-100"
+                    alt="菜單_湯品介紹(南瓜&番茄)"
+                  />
+                </div>
+                <div class="swiper-slide" id="menu_3">
+                  <img
+                    src="./images/menu_mobile_3.webp"
+                    class="d-block w-100"
+                    alt="菜單_湯品介紹(金湯花膠雞)"
+                  />
+                </div>
+                <div class="swiper-slide" id="menu_4">
+                  <img
+                    src="./images/menu_mobile_4.webp"
+                    class="d-block w-100"
+                    alt="菜單_單點海鮮"
+                  />
+                </div>
+                <div class="swiper-slide" id="menu_5">
+                  <img
+                    src="./images/menu_mobile_5.webp"
+                    class="d-block w-100"
+                    alt="菜單_單點肉品"
+                  />
+                </div>
+                <div class="swiper-slide" id="menu_6">
+                  <img
+                    src="./images/menu_mobile_6.webp"
+                    class="d-block w-100"
+                    alt="菜單_單點菜單/其他"
+                  />
+                </div>
+                <div class="swiper-slide" id="menu_7">
+                  <img
+                    src="./images/menu_mobile_7.webp"
+                    class="d-block w-100"
+                    alt="菜單_套餐牛肉"
+                  />
+                </div>
+                <div class="swiper-slide" id="menu_8">
+                  <img
+                    src="./images/menu_mobile_8.webp"
+                    class="d-block w-100"
+                    alt="菜單_套餐海鮮"
+                  />
+                </div>
+                <div class="swiper-slide" id="menu_9">
+                  <img
+                    src="./images/menu_mobile_9.webp"
+                    class="d-block w-100"
+                    alt="菜單_套餐豬肉/雞肉"
+                  />
+                </div>
+                <div class="swiper-slide" id="menu_10">
+                  <img
+                    src="./images/menu_mobile_10.webp"
+                    class="d-block w-100"
+                    alt="酒單_梅酒&清酒"
+                  />
+                </div>
+                <div class="swiper-slide" id="menu_11">
+                  <img
+                    src="./images/menu_mobile_11.webp"
+                    class="d-block w-100"
+                    alt="酒單_HOUSE WINE&CHAMPAGNE"
+                  />
+                </div>
+                <div class="swiper-slide" id="menu_12">
+                  <img
+                    src="./images/menu_mobile_12.webp"
+                    class="d-block w-100"
+                    alt="酒單_RED WINE"
+                  />
+                </div>
+                <div class="swiper-slide" id="menu_13">
+                  <img
+                    src="./images/menu_mobile_13.webp"
+                    class="d-block w-100"
+                    alt="酒單_WHITE WINE"
+                  />
+                </div>
+                <div class="swiper-slide" id="menu_14">
+                  <img
+                    src="./images/menu_mobile_14.webp"
+                    class="d-block w-100"
+                    alt="酒單_威士忌&白蘭地"
+                  />
+                </div>
               </div>
-              <div class="carousel-item" id="menu_mobile_2">
-                <img
-                  src="./images/menu_mobile_2.webp"
-                  class="d-block w-100"
-                  alt="菜單"
-                />
-              </div>
-              <div class="carousel-item" id="menu_mobile_3">
-                <img
-                  src="./images/menu_mobile_3.webp"
-                  class="d-block w-100"
-                  alt="菜單"
-                />
-              </div>
-              <div class="carousel-item" id="menu_mobile_4">
-                <img
-                  src="./images/menu_mobile_4.webp"
-                  class="d-block w-100"
-                  alt="菜單"
-                />
-              </div>
-              <div class="carousel-item" id="menu_mobile_5">
-                <img
-                  src="./images/menu_mobile_5.webp"
-                  class="d-block w-100"
-                  alt="菜單"
-                />
-              </div>
-              <div class="carousel-item" id="menu_mobile_6">
-                <img
-                  src="./images/menu_mobile_6.webp"
-                  class="d-block w-100"
-                  alt="菜單"
-                />
-              </div>
-              <div class="carousel-item" id="menu_mobile_7">
-                <img
-                  src="./images/menu_mobile_7.webp"
-                  class="d-block w-100"
-                  alt="菜單"
-                />
-              </div>
-              <div class="carousel-item" id="menu_mobile_8">
-                <img
-                  src="./images/menu_mobile_8.webp"
-                  class="d-block w-100"
-                  alt="菜單"
-                />
-              </div>
-              <div class="carousel-item" id="menu_mobile_9">
-                <img
-                  src="./images/menu_mobile_9.webp"
-                  class="d-block w-100"
-                  alt="菜單"
-                />
-              </div>
-              <div class="carousel-item" id="menu_mobile_10">
-                <img
-                  src="./images/menu_mobile_10.webp"
-                  class="d-block w-100"
-                  alt="菜單"
-                />
-              </div>
-              <div class="carousel-item" id="menu_mobile_11">
-                <img
-                  src="./images/menu_mobile_11.webp"
-                  class="d-block w-100"
-                  alt="菜單"
-                />
-              </div>
-              <div class="carousel-item" id="menu_mobile_12">
-                <img
-                  src="./images/menu_mobile_12.webp"
-                  class="d-block w-100"
-                  alt="菜單"
-                />
-              </div>
-              <div class="carousel-item" id="menu_mobile_13">
-                <img
-                  src="./images/menu_mobile_13.webp"
-                  class="d-block w-100"
-                  alt="菜單"
-                />
-              </div>
-              <div class="carousel-item" id="menu_mobile_14">
-                <img
-                  src="./images/menu_mobile_14.webp"
-                  class="d-block w-100"
-                  alt="菜單"
-                />
-              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
             </div>
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselExampleMobile"
-              data-bs-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselExampleMobile"
-              data-bs-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Next</span>
-            </button>
           </div>
         </div>
       </div>
@@ -774,6 +607,9 @@
       integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
       crossorigin="anonymous"
     ></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <script src="./js/product_menu.js"></script>
   </body>
 

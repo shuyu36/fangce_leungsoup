@@ -6,17 +6,16 @@
   justify-content: center;
 }
 .carousel_menuimg {
-  max-width: 1040px;
+  max-width: 1000px;
   height: 100%;
   max-height: 880px;
   margin: 0 auto;
   position: relative; /* 加入相對定位，以便絕對定位能夠正確運作 */
+  width: 100%;
+  height: auto;
 }
 
-/* .menu_chose_mobile {
-  display: none;
-} */
-.menu_mobile_all {
+.menu_mobile {
   display: none;
 }
 .menu_chose_desktop {
@@ -65,18 +64,18 @@
   cursor: pointer;
 }
 /* 輪播箭頭 */
-.carousel-control-prev-icon {
-  background-image: url(../images/arrow_carousel_left.svg);
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: #9a6520;
 }
-.carousel-control-next-icon {
-  background-image: url(../images/arrow_carousel_right.svg);
+:root {
+  --swiper-navigation-size: 30px;
 }
-/* .carousel-control-prev {
-  left: -130px;
+
+.memu-link.active {
+  color: rgb(255, 255, 255); /* 橘色文字 */
 }
-.carousel-control-next {
-  right: -130px;
-} */
 
 @media (max-width: 1024px) {
   .menu_item ul {
@@ -93,33 +92,27 @@
     height: 650px;
   }
 }
+@media (min-width: 768px) {
+  .menu_desktop_all {
+    display: block;
+  }
+}
 
 @media (max-width: 767px) {
-  .menu_desktop_img {
-    display: none;
-  }
   .top_banner img {
     content: url("../images/product_menu_banner_mobile.webp");
   }
-
-  /* 電腦版選單隱藏 */
-  /* .menu_chose_desktop {
-    display: none;
-  } */
 
   /* 手機版下拉選單 */
   .menu_mobile_img {
     display: block;
     margin-top: 50px;
   }
-  .menu_desktop_all{
+  .menu_chose_desktop {
     display: none;
   }
 
-  /* .menu_chose_mobile{
-    display: block;
-  } */
-  .menu_mobile_all {
+  .menu_mobile {
     display: block;
   }
 

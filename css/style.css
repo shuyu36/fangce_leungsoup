@@ -42,6 +42,12 @@ section {
   font-weight: 600;
 }
 
+.dropdown-item.active, .dropdown-item:active {
+  color: #fff;
+  text-decoration: none;
+  background-color: #7a583a;
+}
+
 /* ------------------------導覽列------------------------ */
 .nav_mobile {
   display: none;
@@ -71,18 +77,20 @@ section {
 
 .nav-link:focus,
 .nav-link:hover {
-  color: #eea127;
+  color: #7a583a;
 }
 
 .dropdown-item:focus {
-  background-color: #eea127;
+  /* background-color: #eea127; */
+  background-color: #7a583a;
 }
 
 .dropdown-item:focus,
 .dropdown-item:hover {
   color: #ffffff;
   background-color: #e9ecef;
-  background-color: #eea127;
+  /* background-color: #eea127; */
+  background-color: #7a583a;
 }
 
 /* ------------------------title區塊------------------------ */
