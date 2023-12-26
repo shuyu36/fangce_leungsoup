@@ -346,6 +346,7 @@ footer {
     width: 100%;
     height: 100vh;
     background-color: #e5e1d7;
+    position: relative;
   }
   #nav_bg_mobile {
     width: 250px;
