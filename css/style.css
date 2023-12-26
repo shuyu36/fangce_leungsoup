@@ -97,7 +97,7 @@ section {
 /* ------------------------麵包屑------------------------ */
 
 .breadcrumb {
-  --bs-breadcrumb-divider: '>';
+  --bs-breadcrumb-divider: ">";
   max-width: 1420px;
   margin: auto;
   padding: 0.2rem;
@@ -338,8 +338,8 @@ footer {
   /* 麵包屑 */
   .breadcrumb {
     font-size: 13px;
-    padding: 0.1rem;
-
+    padding: 0.15rem;
+    padding-left: 0.2rem;
   }
 
   .offcanvas-header {
@@ -365,7 +365,7 @@ footer {
     position: absolute;
     right: 0;
     bottom: 150px;
-}
+  }
   /* ------------------------部落格------------------------ */
   .blogger_content {
     grid-template-columns: repeat(3, 1fr);
