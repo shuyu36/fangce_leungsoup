@@ -31,15 +31,13 @@
   letter-spacing: 5px;
 }
 
-
-
 @media (max-width: 576px) {
-    .line {
-        margin: 50px auto;
-    }
-    .Information {
-        gap: 30px;
-        flex-direction: column;
-    }
-
+  .line {
+    margin: 50px auto;
+  }
+  .Information {
+    gap: 30px;
+    flex-direction: column;
+    padding: 0;
+  }
 }
