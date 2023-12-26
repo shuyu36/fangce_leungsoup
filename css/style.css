@@ -94,9 +94,13 @@ section {
   background-color: #7a583a;
 }
 
-/* ------------------------title區塊------------------------ */
+/* ------------------------麵包屑------------------------ */
 
-.top_banner {
+.breadcrumb {
+  --bs-breadcrumb-divider: '>';
+  max-width: 1420px;
+  margin: auto;
+  padding: 0.2rem;
 }
 /* ------------------------title區塊------------------------ */
 
@@ -331,6 +335,12 @@ footer {
     font-size: 20px;
     font-weight: normal;
   }
+  /* 麵包屑 */
+  .breadcrumb {
+    font-size: 13px;
+    padding: 0.1rem;
+
+  }
 
   .offcanvas-header {
     /* justify-content: flex-end; */
@@ -350,12 +360,12 @@ footer {
     background-color: #e5e1d7;
   }
   #nav_bg_mobile {
-    width: 250px;
+    width: 50%;
     height: auto;
     position: absolute;
     right: 0;
-    top: 260px;
-  }
+    bottom: 150px;
+}
   /* ------------------------部落格------------------------ */
   .blogger_content {
     grid-template-columns: repeat(3, 1fr);
@@ -375,7 +385,7 @@ footer {
     height: auto;
     position: absolute;
     right: 0;
-    top: 260px;
+    bottom: 200px;
   }
   /* ------------------------整體寬度------------------------ */
   section {
