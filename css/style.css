@@ -368,7 +368,7 @@ footer {
   .nav {
     flex-direction: row-reverse;
     /* text-underline-offset: 3px; */
-    /* text-decoration: underline; */
+    text-decoration: underline;
     gap: 45px;
     padding: 50px 20px;
   }
