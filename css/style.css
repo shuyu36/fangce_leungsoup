@@ -349,9 +349,8 @@ footer {
     writing-mode: vertical-lr;
     font-size: 20px;
     font-weight: normal;
-    text-underline-offset: 3px;
-    /* width: 60px; */
-    text-decoration: underline;
+    /* text-underline-offset: 3px;
+    text-decoration: underline; */
   }
   /* 麵包屑 */
   .breadcrumb {
@@ -368,7 +367,8 @@ footer {
   }
   .nav {
     flex-direction: row-reverse;
-    /* text-decoration: underline; */
+    text-underline-offset: 3px;
+    text-decoration: underline;
     gap: 45px;
     padding: 50px 20px;
   }
@@ -400,7 +400,7 @@ footer {
   }
   #nav_bg_mobile {
     width: 35%;
-    bottom: 80px
+    bottom: 80px;
   }
   /* ------------------------整體寬度------------------------ */
   section {
