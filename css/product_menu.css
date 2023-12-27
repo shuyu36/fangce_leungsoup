@@ -1,5 +1,10 @@
 /* ------------------------線上菜單------------------------ */
-
+section {
+  max-width: 1320px;
+  margin: auto;
+  margin: 50px auto;
+  padding: 0 80px;
+}
 .carousel_menu {
   display: flex;
   align-items: center;
@@ -43,7 +48,7 @@
   left: 0;
   height: 800px;
   width: 100%;
-  max-width: 250px;
+  max-width: 290px;
   background: #886b54;
   color: #fff;
   z-index: 5;
@@ -54,10 +59,17 @@
 }
 
 .menu_item ul {
-  padding: 0 30px;
   display: flex;
   flex-direction: column;
   gap: 25px;
+}
+
+.menu_ul {
+  padding: 0 30px;
+}
+
+.menu_ul li:nth-child(1) {
+  list-style: disc;
 }
 
 .menu-link {
@@ -86,11 +98,11 @@
   .menu_chose_desktop {
     max-width: 30px;
     line-height: 30px;
-    height: 650px;
+    height: 600px;
   }
   .menu_item {
-    height: 650px;
-    max-width: 210px;
+    height: 600px;
+    max-width: 245px;
   }
 }
 @media (min-width: 768px) {
@@ -100,8 +112,7 @@
 }
 
 @media (max-width: 767px) {
-
-  .menu_item{
+  .menu_item {
     display: none;
   }
   .top_banner img {
@@ -176,4 +187,7 @@
   .carousel_menuimg {
     width: 100%;
   }
+  section {
+    padding: 0 20px;
+}
 }

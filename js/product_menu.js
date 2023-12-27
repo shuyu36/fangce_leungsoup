@@ -75,6 +75,10 @@ document.addEventListener("DOMContentLoaded", function () {
   // 獲取所有菜單鏈接
   var menuLinks = document.querySelectorAll(".dropdown-item");
   var pcMenuLinks = document.querySelectorAll(".menu-link");
+  var swiperActive = document.querySelector(".swiper-slide-active");
+  var swiperNext = document.querySelectorAll(".swiper-slide-next");
+  var currentOrangeLink = null;
+
   function mapMenuData(menuLinks, type) {
     // 為每個菜單鏈接添加點擊事件監聽器
     menuLinks.forEach(function (link, index) {
@@ -103,11 +107,20 @@ document.addEventListener("DOMContentLoaded", function () {
         if (index !== -1) {
           const tempIndex = type === "pc" ? index : index - 4;
           swiper.slideTo(tempIndex);
+
+          // // 添加橘色樣式到當前點擊的 .menu-link
+          // currentOrangeLink = pcMenuLinks[swiperActive];
+          if (swiperActive) {
+            currentOrangeLink = pcMenuLinks[swiperActive]; 
+            console.log(swiperActive);
+            currentOrangeLink.classList.add("orange-color");
+          }
+          console.log(swiperActive);
+          currentOrangeLink.classList.add("orange-color");
         }
       });
     });
   }
-
   mapMenuData(menuLinks, "mobile");
   mapMenuData(pcMenuLinks, "pc");
 });

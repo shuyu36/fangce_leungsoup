@@ -2,9 +2,7 @@
 p {
   font-size: 18px;
 }
-span {
-  font-size: 20px;
-}
+
 .about_block {
   display: flex;
   flex-direction: column;
@@ -33,6 +31,8 @@ span {
   font-weight: 700;
   text-align: center;
   line-height: 50px;
+  font-size: 20px;
+
 
   border-left: solid #6a563f 10px;
   border-right: solid #6a563f 10px;
