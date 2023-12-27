@@ -349,8 +349,8 @@ footer {
     writing-mode: vertical-lr;
     font-size: 20px;
     font-weight: normal;
-    /* text-underline-offset: 3px;
-    text-decoration: underline; */
+    text-underline-offset: 3px;
+    text-decoration: underline;
   }
   /* 麵包屑 */
   .breadcrumb {
@@ -367,8 +367,8 @@ footer {
   }
   .nav {
     flex-direction: row-reverse;
-    text-underline-offset: 3px;
-    text-decoration: underline;
+    /* text-underline-offset: 3px;
+    text-decoration: underline; */
     gap: 45px;
     padding: 50px 20px;
   }
