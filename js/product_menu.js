@@ -75,10 +75,8 @@ document.addEventListener("DOMContentLoaded", function () {
   // 獲取所有菜單鏈接
   var menuLinks = document.querySelectorAll(".dropdown-item");
   var pcMenuLinks = document.querySelectorAll(".menu-link");
-  var swiperActive = document.querySelector(".swiper-slide-active");
-  var swiperNext = document.querySelectorAll(".swiper-slide-next");
+  var ulLinks = document.querySelectorAll(".menu_ul");
   var currentOrangeLink = null;
-
   function mapMenuData(menuLinks, type) {
     // 為每個菜單鏈接添加點擊事件監聽器
     menuLinks.forEach(function (link, index) {
@@ -88,7 +86,12 @@ document.addEventListener("DOMContentLoaded", function () {
         // event.stopPropagation();
         // 獲取 data-target 的值
         var target = link.getAttribute("data-target");
-
+        for( const link of ulLinks) {
+          link.style.color = 'white';
+        }
+        // ulLinks.forEach((i) => {
+        //   i.style.color = 'white';
+        // })
         // // 將所有的 dropdown-item 移除 active 類別
         // menuLinks.forEach(function (item) {
         //   item.classList.remove("active");
@@ -104,19 +107,23 @@ document.addEventListener("DOMContentLoaded", function () {
         // console.log(target);
         // console.log(index);
         // 如果找到索引，則導航到相應的 swiper 幻燈片
+        console.log(event)
+        event.target.parentElement.style.color = 'orange';
         if (index !== -1) {
           const tempIndex = type === "pc" ? index : index - 4;
           swiper.slideTo(tempIndex);
-
-          // // 添加橘色樣式到當前點擊的 .menu-link
+          // // 添加橘色樣式當前點擊的 .menu-link
           // currentOrangeLink = pcMenuLinks[swiperActive];
-          if (swiperActive) {
-            currentOrangeLink = pcMenuLinks[swiperActive]; 
-            console.log(swiperActive);
-            currentOrangeLink.classList.add("orange-color");
-          }
-          console.log(swiperActive);
-          currentOrangeLink.classList.add("orange-color");
+          // if (swiperActive) {
+          //   currentOrangeLink = pcMenuLinks[swiperActive];
+          //   // for( const link of pcMenuLinks ) {
+          //   //   if(link.getAttribute("data-target") === target)
+          //   // }
+          //   console.log(swiperActive.id);
+          //   console.log(pcMenuLinks);
+          //   currentOrangeLink.classList.add("orange-color");
+          // }
+          // currentOrangeLink.classList.add("orange-color");
         }
       });
     });
