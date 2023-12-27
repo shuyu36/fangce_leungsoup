@@ -43,7 +43,7 @@
   left: 0;
   height: 800px;
   width: 100%;
-  max-width: 200px;
+  max-width: 250px;
   background: #886b54;
   color: #fff;
   z-index: 5;
@@ -90,6 +90,7 @@
   }
   .menu_item {
     height: 650px;
+    max-width: 210px;
   }
 }
 @media (min-width: 768px) {
@@ -99,6 +100,10 @@
 }
 
 @media (max-width: 767px) {
+
+  .menu_item{
+    display: none;
+  }
   .top_banner img {
     content: url("../images/product_menu_banner_mobile.webp");
   }

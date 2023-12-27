@@ -16,6 +16,13 @@ document.addEventListener("click", function (event) {
   if (!menuChose.contains(event.target) && !menuItems.contains(event.target)) {
     menuItems.style.display = "none";
   }
+
+  // 添加媒體查詢，當視窗寬度小於767px時，將 menuItems 隱藏
+  window.addEventListener("resize", function () {
+    if (window.innerWidth < 767) {
+      menuItems.style.display = "none";
+    }
+  });
 });
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -55,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // 為每個 dropdown-item 添加點擊事件監聽器
   dropdownItems.forEach(function (item) {
     item.addEventListener("click", function () {
-      console.log("Button clicked!");
+      // console.log("Button clicked!");
 
       // 獲取點擊的 dropdown-item 的文字
       var itemName = item.textContent.trim();
@@ -71,7 +78,7 @@ document.addEventListener("DOMContentLoaded", function () {
   function mapMenuData(menuLinks, type) {
     // 為每個菜單鏈接添加點擊事件監聽器
     menuLinks.forEach(function (link, index) {
-      console.log(link);
+      // console.log(link);
       link.addEventListener("click", function (event) {
         // 阻止點擊事件冒泡
         // event.stopPropagation();
@@ -90,18 +97,17 @@ document.addEventListener("DOMContentLoaded", function () {
         var index = Array.from(menuLinks).findIndex(function (item) {
           return item.getAttribute("data-target") === target;
         });
-        console.log(target);
-        console.log(index);
+        // console.log(target);
+        // console.log(index);
         // 如果找到索引，則導航到相應的 swiper 幻燈片
         if (index !== -1) {
-          const tempIndex = type === 'pc' ? index :index - 4
+          const tempIndex = type === "pc" ? index : index - 4;
           swiper.slideTo(tempIndex);
         }
       });
     });
   }
 
-  mapMenuData(menuLinks, 'mobile')
-  mapMenuData(pcMenuLinks, 'pc')
-
+  mapMenuData(menuLinks, "mobile");
+  mapMenuData(pcMenuLinks, "pc");
 });
