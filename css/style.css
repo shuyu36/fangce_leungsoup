@@ -405,7 +405,7 @@ footer {
   .nav {
     gap: 35px;
     padding: 50px 20px;
-}
+  }
   /* ------------------------整體寬度------------------------ */
   section {
     padding: 0 20px;
@@ -419,8 +419,10 @@ footer {
   }
 
   /* ------------------------footer------------------------ */
-  .footer_nav{
-    gap: 15px;
+  .footer_nav {
+    gap: 0;
+    width: 100%;
+    justify-content: space-between;
   }
   .fb-page {
     width: 100%;
