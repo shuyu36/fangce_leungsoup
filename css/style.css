@@ -339,8 +339,10 @@ footer {
 
   .nav_mobile_ul {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     justify-items: center;
+    /* justify-items: start; */
+    /* margin: 50px; */
   }
   .nav_item {
     display: none;
@@ -351,6 +353,8 @@ footer {
     font-weight: normal;
     /* text-underline-offset: 3px;
     text-decoration: underline; */
+    border-left: 1px solid rgb(0, 0, 0);
+    padding: 0.5rem 0rem
   }
   /* 麵包屑 */
   .breadcrumb {
@@ -368,9 +372,11 @@ footer {
   .nav {
     flex-direction: row-reverse;
     /* text-underline-offset: 3px; */
-    text-decoration: underline;
-    gap: 45px;
+    /* text-decoration: underline;
+    -webkit-text-decoration: underline; */
+    gap: 30px;
     padding: 50px 20px;
+    margin-right: 30px;
   }
   .offcanvas_block {
     width: 100%;
@@ -403,8 +409,8 @@ footer {
     bottom: 80px;
   }
   .nav {
-    gap: 35px;
-    padding: 50px 0px;
+    /* gap: 0px;  */
+    /* padding: 50px 30px; */
   }
   /* ------------------------整體寬度------------------------ */
   section {

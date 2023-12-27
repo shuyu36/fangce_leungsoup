@@ -57,4 +57,11 @@
   section {
     padding: 0;
   }
+
+  .accordion-item img{
+    width: 30px;
+  }
+  .accordion-body {
+    margin-left: 37px;
+}
 }
