@@ -402,6 +402,10 @@ footer {
     width: 35%;
     bottom: 80px;
   }
+  .nav {
+    gap: 35px;
+    padding: 50px 20px;
+}
   /* ------------------------整體寬度------------------------ */
   section {
     padding: 0 20px;
