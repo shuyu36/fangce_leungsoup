@@ -1,6 +1,8 @@
 body {
   font-family: "Noto Sans TC", "Montserrat", sans-serif, Verdana;
-  color: #000;
+  /* color: #000; */
+  color: #4d4d4d;
+
   background-color: rgb(253, 253, 253);
   letter-spacing: 0.9px;
 }
@@ -17,7 +19,8 @@ a:hover .title_icon path {
 
 a {
   text-decoration: none;
-  color: #000;
+  /* color: #000; */
+  color: #4d4d4d;
 }
 
 p {
@@ -72,7 +75,8 @@ section {
 
 /* 改bootstrap原始顏色 */
 .nav-link {
-  color: #000;
+  /* color: #000; */
+  color: #4d4d4d;
 }
 
 .nav-link:focus,
@@ -113,6 +117,7 @@ section {
   font-size: 22px;
   font-weight: 700;
   margin-left: -30px;
+  letter-spacing: 5.06px;
 }
 
 /* ---------------部落格--------------- */
