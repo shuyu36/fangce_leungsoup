@@ -150,8 +150,15 @@
                   height: 100%;
                 "
               >
-                <div>
-                  <ul class="nav justify-content-end">
+                <div
+                  style="
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    height: 100vh;
+                  "
+                >
+                  <ul class="nav justify-content-end nav_mobile_ul">
                     <li class="nav-item">
                       <a
                         class="nav-link active"
@@ -183,57 +190,50 @@
                       <a class="nav-link" href="#">商品訂購</a>
                     </li>
                   </ul>
-                  <img
-                    src="./images/nav_bg_mobile.webp"
-                    alt="手機板導覽列背景圖"
-                    id="nav_bg_mobile"
-                  />
-                </div>
 
-                <ul
-                  style="
-                    display: flex;
-                    gap: 30px;
-                    justify-content: center;
-                    margin-bottom: 50px;
-                  "
-                >
-                  <li>
-                    <a href="tel:0227723838" target="_blank"
-                      ><img
-                        src="./images/phone.svg"
-                        alt="電話"
-                        width="30px"
-                        height="auto"
-                    /></a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.facebook.com/profile.php?id=100087664532437"
-                      target="_blank"
-                    >
-                      <img
-                        src="./images/media_fb.svg"
-                        alt="facebook"
-                        width="30px"
-                        height="auto"
-                      />
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.instagram.com/Leungsoup?fbclid=IwAR0KPX_0607RWz-Fuo9ja3zRaT7bWzGeNbKjeWF5PGK0wPqtfl8TEw-6k2Y"
-                      target="_blank"
-                    >
-                      <img
-                        src="./images/media_ig.svg"
-                        alt="instagram"
-                        width="30px"
-                        height="auto"
-                      />
-                    </a>
-                  </li>
-                </ul>
+                  <ul class="nav_footer">
+                    <img
+                      src="./images/nav_bg_mobile.webp"
+                      alt="手機板導覽列背景圖"
+                      id="nav_bg_mobile"
+                    />
+                    <li>
+                      <a href="tel:0227723838" target="_blank"
+                        ><img
+                          src="./images/phone.svg"
+                          alt="電話"
+                          width="30px"
+                          height="auto"
+                      /></a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.facebook.com/profile.php?id=100087664532437"
+                        target="_blank"
+                      >
+                        <img
+                          src="./images/media_fb.svg"
+                          alt="facebook"
+                          width="30px"
+                          height="auto"
+                        />
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.instagram.com/Leungsoup?fbclid=IwAR0KPX_0607RWz-Fuo9ja3zRaT7bWzGeNbKjeWF5PGK0wPqtfl8TEw-6k2Y"
+                        target="_blank"
+                      >
+                        <img
+                          src="./images/media_ig.svg"
+                          alt="instagram"
+                          width="30px"
+                          height="auto"
+                        />
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
@@ -254,8 +254,7 @@
     <div
       style="background: #fff; box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25)"
     >
-    <nav class="breadcrumb" aria-label="breadcrumb">
-
+      <nav class="breadcrumb" aria-label="breadcrumb">
         <ol class="breadcrumb" style="margin: 0">
           <li class="breadcrumb-item"><a href="./index.html">首頁</a></li>
           <li class="breadcrumb-item" aria-current="page">產品介紹</li>
@@ -285,7 +284,13 @@
           沸騰的湯品在30分鐘內以通過安全認證的高溫內熱袋分裝完畢，再以進口急速降溫設備降溫至10°C以下，此時進行真空封口並冷凍，確保湯品衛生安全。梁湯良湯可在冷凍空間保存三個月，無添加防腐劑、味精與化學香料。
         </p>
       </div>
-      <img src="./images/product_introduce_img.webp" alt="湯品加熱介紹圖" width="800px" height="auto" class="introduce_img">
+      <img
+        src="./images/product_introduce_img.webp"
+        alt="湯品加熱介紹圖"
+        width="800px"
+        height="auto"
+        class="introduce_img"
+      />
     </section>
 
     <!-- footer -->

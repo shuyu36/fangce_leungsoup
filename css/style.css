@@ -73,7 +73,6 @@ section {
 /* 改bootstrap原始顏色 */
 .nav-link {
   color: #000;
-  font-weight: 700;
 }
 
 .nav-link:focus,
@@ -327,6 +326,22 @@ footer {
   .nav_mobile {
     display: block;
   }
+
+  .nav_footer {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-bottom: 50px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .nav_mobile_ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+  }
   .nav_item {
     display: none;
   }
@@ -364,7 +379,7 @@ footer {
     height: auto;
     position: absolute;
     right: 0;
-    bottom: 150px;
+    bottom: 100px;
   }
   /* ------------------------部落格------------------------ */
   .blogger_content {
@@ -381,11 +396,8 @@ footer {
     padding: 0 20px;
   }
   #nav_bg_mobile {
-    width: 40%;
-    height: auto;
-    position: absolute;
-    right: 0;
-    bottom: 200px;
+    width: 35%;
+    bottom: 80px
   }
   /* ------------------------整體寬度------------------------ */
   section {

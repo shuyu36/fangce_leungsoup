@@ -122,6 +122,7 @@
     flex-direction: column;
   }
   .carousel_menuimg {
+    width: 80%;
     margin-top: 50px;
   }
 
@@ -163,5 +164,11 @@
   .btn:focus {
     outline: 0;
     box-shadow: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel_menuimg {
+    width: 100%;
   }
 }
