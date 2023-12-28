@@ -1,23 +1,34 @@
 var menuItems = document.querySelector(".menu_item");
 var menuChose = document.querySelector(".menu_chose_desktop");
+var ulLinks = document.querySelectorAll(".menu_ul");
 
+// 電腦版menu 點擊左方菜單時 將menu顯示出來
 document
   .querySelector(".menu_chose_desktop")
   .addEventListener("click", function () {
     if (menuItems.style.display === "none" || menuItems.style.display === "") {
       menuItems.style.display = "flex";
       menuItems.style.alignItems = "center";
+      // console.log(ulLinks);
     } else {
       menuItems.style.display = "none";
     }
   });
 
+// 點擊項目時收回menu
+ulLinks.forEach(function (link) {
+  link.addEventListener("click", function () {
+    menuItems.style.display = "none";
+  });
+});
+
+// 監測是否點擊menu 若不適點擊菜單 則將menu收回
 document.addEventListener("click", function (event) {
   if (!menuChose.contains(event.target) && !menuItems.contains(event.target)) {
     menuItems.style.display = "none";
   }
-
-  // 添加媒體查詢，當視窗寬度小於767px時，將 menuItems 隱藏
+  // console.log(event.target);
+  // 小於767px時，將 menuItems 隱藏
   window.addEventListener("resize", function () {
     if (window.innerWidth < 767) {
       menuItems.style.display = "none";
@@ -25,6 +36,7 @@ document.addEventListener("click", function (event) {
   });
 });
 
+// swiper
 document.addEventListener("DOMContentLoaded", function () {
   var swiper = new Swiper(".mySwiper", {
     cssMode: true,
@@ -33,9 +45,6 @@ document.addEventListener("DOMContentLoaded", function () {
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
-    },
-    pagination: {
-      el: ".swiper-pagination",
     },
     mousewheel: true,
     keyboard: true,
@@ -52,21 +61,16 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   });
 
-  // 獲取按鈕元素
+  // 手機版menu
   var dropdownButton = document.getElementById("dropdownMenuButton1");
-  var dropdownMenu = document.querySelector(".dropdown-menu");
-
-  // 獲取所有的 dropdown-item 元素
   var dropdownItems = document.querySelectorAll(".dropdown-item");
 
   // 為每個 dropdown-item 添加點擊事件監聽器
-  dropdownItems.forEach(function (item) {
-    item.addEventListener("click", function () {
-      // console.log("Button clicked!");
-
+  dropdownItems.forEach(function (downName) {
+    downName.addEventListener("click", function () {
+      // console.log(dropdownItems);
       // 獲取點擊的 dropdown-item 的文字
-      var itemName = item.textContent.trim();
-
+      var itemName = downName.textContent.trim();
       // 設置按鈕的文字為點擊的 dropdown-item 的文字
       dropdownButton.textContent = itemName;
     });
@@ -75,55 +79,30 @@ document.addEventListener("DOMContentLoaded", function () {
   // 獲取所有菜單鏈接
   var menuLinks = document.querySelectorAll(".dropdown-item");
   var pcMenuLinks = document.querySelectorAll(".menu-link");
-  var ulLinks = document.querySelectorAll(".menu_ul");
-  var currentOrangeLink = null;
   function mapMenuData(menuLinks, type) {
     // 為每個菜單鏈接添加點擊事件監聽器
-    menuLinks.forEach(function (link, index) {
+    menuLinks.forEach(function (link) {
       // console.log(link);
       link.addEventListener("click", function (event) {
-        // 阻止點擊事件冒泡
-        // event.stopPropagation();
         // 獲取 data-target 的值
         var target = link.getAttribute("data-target");
-        for( const link of ulLinks) {
-          link.style.color = 'white';
+        for (const link of ulLinks) {
+          link.style.color = "white";
         }
         // ulLinks.forEach((i) => {
         //   i.style.color = 'white';
         // })
-        // // 將所有的 dropdown-item 移除 active 類別
-        // menuLinks.forEach(function (item) {
-        //   item.classList.remove("active");
-        // });
-
-        // // 將當前點擊的 dropdown-item 添加 active 類別
-        // link.classList.add("active");
 
         // 通過 data-target 的值找到對應的索引
         var index = Array.from(menuLinks).findIndex(function (item) {
           return item.getAttribute("data-target") === target;
         });
-        // console.log(target);
-        // console.log(index);
         // 如果找到索引，則導航到相應的 swiper 幻燈片
-        console.log(event)
-        event.target.parentElement.style.color = 'orange';
+        event.target.parentElement.style.color = "orange";
+        console.log(event);
         if (index !== -1) {
           const tempIndex = type === "pc" ? index : index - 4;
           swiper.slideTo(tempIndex);
-          // // 添加橘色樣式當前點擊的 .menu-link
-          // currentOrangeLink = pcMenuLinks[swiperActive];
-          // if (swiperActive) {
-          //   currentOrangeLink = pcMenuLinks[swiperActive];
-          //   // for( const link of pcMenuLinks ) {
-          //   //   if(link.getAttribute("data-target") === target)
-          //   // }
-          //   console.log(swiperActive.id);
-          //   console.log(pcMenuLinks);
-          //   currentOrangeLink.classList.add("orange-color");
-          // }
-          // currentOrangeLink.classList.add("orange-color");
         }
       });
     });
