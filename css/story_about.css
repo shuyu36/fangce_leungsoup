@@ -29,4 +29,9 @@
   .top_banner img {
     content: url("../images/about_QA_banner_mobile.webp");
   }
+
+  /* 改系統設定 */
+  .breadcrumb a{
+    font-size: 13px !important;
+  }
 }

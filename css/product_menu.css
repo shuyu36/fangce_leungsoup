@@ -89,6 +89,13 @@ section {
   color: rgb(255, 255, 255); /* 橘色文字 */
 }
 
+
+/* ----------------------系統樣式覆蓋---------------------- */
+#rot #rot_ctr1_bod_ctr3_bod_wrp1 p {
+  line-height: 40px;
+}
+
+
 @media (max-width: 1024px) {
   .menu_item ul {
     font-size: 13px;
@@ -104,6 +111,11 @@ section {
     height: 600px;
     max-width: 245px;
   }
+/* ----------------------系統樣式覆蓋---------------------- */
+
+  #rot #rot_ctr1_bod_ctr3_bod_wrp1 p {
+    line-height: 31px;
+}
 }
 @media (min-width: 768px) {
   .menu_desktop_all {
@@ -118,6 +130,12 @@ section {
   .top_banner img {
     content: url("../images/product_menu_banner_mobile.webp");
   }
+
+  
+  .swiper-button-prev, .swiper-button-next {
+    color: #9a6520;
+    display: none;
+}
 
   /* 手機版下拉選單 */
   .menu_mobile_img {

@@ -1,0 +1,262 @@
+/* 電商系統改style */
+
+#rot #iv_ecom_wrp .footer-container {
+  display: none;
+}
+
+#rot #iv_ecom_wrp a.skip-link:hover {
+  color: inherit;
+}
+
+#rot #iv_ecom_wrp .skip-account .icon {
+  background-position: 4px -45px;
+}
+
+#rot #iv_ecom_wrp .skip-account:not(.skip-active):hover .icon {
+  background-position: 4px -45px;
+}
+
+#rot #iv_ecom_wrp .skip-cart .icon {
+  background-position: 0px -97px;
+}
+
+#rot #iv_ecom_wrp .skip-cart:not(.skip-active):hover .icon {
+  background-position: 0px -97px;
+}
+
+#rot #iv_ecom_wrp .skip-nav .icon {
+  background-position: 4px 4px;
+}
+
+#rot #iv_ecom_wrp .skip-nav:not(.skip-active):hover .icon {
+  background-position: 4px 4px;
+}
+
+#rot #iv_ecom_wrp .skip-search .icon {
+  background-position: 4px -146px;
+}
+
+#rot #iv_ecom_wrp .skip-search:not(.skip-active):hover .icon {
+  background-position: 4px -146px;
+}
+
+#rot #iv_ecom_wrp .block-account li a {
+  text-decoration: none;
+}
+
+/* 搜尋框 */
+
+/* 警示 */
+#rot #iv_ecom_wrp .input-text.validation-failed {
+  border: 2px solid red;
+}
+
+/* focus */
+#rot #iv_ecom_wrp .input-text:focus {
+  border: 2px solid #4d4d4d;
+}
+
+/* 帳戶 */
+#rot #iv_ecom_wrp #header-account a:hover {
+  color: #4d4d4d;
+}
+#rot #iv_ecom_wrp .skip-account {
+  padding: 0 20px;
+}
+#rot #iv_ecom_wrp .skip-cart .count {
+  color: #4d4d4d;
+  background: none;
+}
+#rot #iv_ecom_wrp .skip-link {
+  background: none;
+}
+#rot #iv_ecom_wrp .skip-link.skip-active .count {
+  color: rgba(77,77,77,1);
+}
+
+
+/* 左側分類標題 */
+#rot #iv_ecom_wrp .nav-primary a:hover,
+#rot #iv_ecom_wrp .nav-primary li:hover > a {
+  color: #4d4d4d;
+}
+
+/* 手機版導覽列購物車 */
+#rot #iv_ecom_wrp .header-minicart #minicart-success-message {
+  color: rgb(255 0 0);
+}
+/* 商品 */
+#rot #iv_ecom_wrp .product-image,
+#rot
+  #iv_ecom_wrp
+  .no-touch
+  .product-img-box
+  .product-image:not(.zoom-available):hover {
+  border: 0 none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  text-align: center;
+}
+
+.product-image {
+  display: flex;
+  justify-content: center;
+}
+
+/* 按鈕 */
+#rot #iv_ecom_wrp div.wrapper .button {
+  border-radius: 10px;
+}
+#rot #iv_ecom_wrp .wrapper .button:active {
+  background: rgba(99, 61, 23, 1);
+  color: #ffffff;
+}
+
+/* 產品顯示 */
+#rot #iv_ecom_wrp .std ul.featured-products-grid li {
+  margin-left: 0;
+  width: 100%;
+}
+
+#rot #iv_ecom_wrp img {
+  width: 100%;
+}
+.product-name {
+  min-height: 30px;
+}
+#rot #iv_ecom_wrp .add-to-links a {
+  display: inline-block;
+  padding: 0px 3px 3px;
+  display: none;
+}
+
+.featured-products-grid {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+/* 訊息橫條 */
+#rot #iv_ecom_wrp .messages .success-msg li {
+  border-left: 5px solid rgba(99, 61, 23, 1);
+}
+#rot #iv_ecom_wrp .messages .success-msg li:before {
+  border-left: 6px solid rgba(99, 61, 23, 1);
+}
+/* -----------產品目錄----------- */
+#rot #iv_ecom_wrp .product-collateral > dl > dt:after {
+  border-left: 4px solid #633d17;
+}
+#rot #iv_ecom_wrp .product-collateral.accordion-open > dl > dt.current:after {
+  border-top: 4px solid #633d17;
+}
+#rot #iv_ecom_wrp .product-collateral > dl > dt:hover {
+  color: #633d17;
+}
+#rot #iv_ecom_wrp .product-collateral .toggle-tabs li.current span,
+#rot #iv_ecom_wrp .product-collateral .toggle-tabs li:hover span {
+  color: #633d17;
+}
+#rot
+  #iv_ecom_wrp
+  .sidebar
+  .block:not(.block-layered-nav)
+  .block-title
+  > strong:after {
+  border-left: 4px solid #633d17;
+}
+#rot
+  #iv_ecom_wrp
+  .sidebar
+  .block:not(.block-layered-nav)
+  .block-title.active
+  > strong:after {
+  border-top: 4px solid #633d17;
+}
+
+/* -----------分類網頁----------- */
+#rot #iv_ecom_wrp .col3-layout .col-wrapper .col-main {
+  width: 100%;
+}
+.block-compare {
+  display: none;
+}
+
+/* -----------訂閱電子報----------- */
+#rot #iv_ecom_wrp .form-list .control {
+  display: none;
+}
+
+/* -----------購物車結帳金額----------- */
+#rot #iv_ecom_wrp .cart .cart-totals table tfoot td span {
+  font-size: 18px !important;
+}
+#rot #iv_ecom_wrp .button2 span:hover,
+#rot #iv_ecom_wrp .button2 span span:hover {
+  text-decoration: none;
+  color: #4d4d4d;
+}
+
+
+
+
+/* -----------帳戶頁----------- */
+#rot #iv_ecom_wrp h2.product-name a:hover, #rot #iv_ecom_wrp h3.product-name a:hover, #rot #iv_ecom_wrp h4.product-name a:hover, #rot #iv_ecom_wrp h5.product-name a:hover, #rot #iv_ecom_wrp p.product-name a:hover {
+  color: #4d4d4d;
+}
+
+
+
+@media (max-width: 1024px) {
+  #rot #iv_ecom_wrp h2.product-name a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 880px) {
+  #rot #iv_ecom_wrp h2.product-name a {
+    font-size: 15px;
+  }
+  #rot #iv_ecom_wrp .price-box .price {
+    font-size: 15px;
+  }
+  #rot #iv_ecom_wrp .add-to-links {
+    font-size: 13px;
+  }
+
+  .featured-products-grid {
+    gap: 20px;
+  }
+}
+@media (max-width: 770px) {
+  #rot #iv_ecom_wrp .skip-cart .count {
+    color: #4d4d4d;
+    background: #d39251;
+  }
+  #rot #iv_ecom_wrp .block-layered-nav .block-subtitle--filter {
+    background-color: #633d17;
+  }
+  #rot #iv_ecom_wrp .block-layered-nav .block-subtitle--filter:hover {
+    background-color: #633d17;
+  }
+}
+@media (max-width: 645px) {
+  .featured-products-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 495px) {
+  .featured-products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

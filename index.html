@@ -4,14 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Noto+Sans+TC&display=swap"
       rel="stylesheet"
@@ -347,7 +347,7 @@
               <span>NT$220</span>
             </div>
           </li>
-          <!-- <li class="product_img" style="text-align: center">
+          <li class="product_img" style="text-align: center">
             <img
               src="./images/product_1.webp"
               alt="花膠金蟲草螺片紅蘿蔔龍骨湯"
@@ -358,36 +358,48 @@
               <span>花膠金蟲草螺片紅蘿蔔龍骨湯</span>
               <span>NT$440</span>
             </div>
-          </li> -->
+          </li>
+          <li class="product_img" style="text-align: center">
+            <img
+              src="./images/product_1.webp"
+              alt="花膠金蟲草螺片紅蘿蔔龍骨湯"
+              width="100%"
+              height="auto"
+            />
+            <div style="display: inline-flex; flex-direction: column">
+              <span>花膠金蟲草螺片紅蘿蔔龍骨湯</span>
+              <span>NT$440</span>
+            </div>
+          </li>
         </ul>
 
-        <a href="" class="a_title">
-          <div
-            style="
-              display: inline-flex;
-              align-items: center;
-              gap: 7px;
-              float: right;
-              margin-top: 40px;
-            "
+        <a
+          href=""
+          class="a_title"
+          style="
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+            float: right;
+            margin-top: 40px;
+          "
+        >
+          <p>前往訂購</p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="6"
+            height="12"
+            viewBox="0 0 8 14"
+            fill="none"
+            class="a_icon"
           >
-            <p>前往訂購</p>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="6"
-              height="12"
-              viewBox="0 0 8 14"
-              fill="none"
-              class="a_icon"
-            >
-              <path
-                d="M1 1L7 7L1 13"
-                stroke="#4D4D4D"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </div>
+            <path
+              d="M1 1L7 7L1 13"
+              stroke="#4D4D4D"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
         </a>
       </div>
     </section>
@@ -498,6 +510,7 @@
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen
+          style="position: absolute; width: 100%; height: 100%; top: 0; left: 0"
         ></iframe>
       </div>
     </section>
@@ -559,7 +572,11 @@
             <ul style="display: flex; gap: 30px">
               <li>
                 <a href="tel:0227723838" target="_blank"
-                  ><img src="./images/phone.svg" alt="電話"
+                  ><img
+                    src="./images/phone.svg"
+                    alt="電話"
+                    width="100%"
+                    height="auto"
                 /></a>
               </li>
               <li>
@@ -567,7 +584,12 @@
                   href="https://www.facebook.com/profile.php?id=100087664532437"
                   target="_blank"
                 >
-                  <img src="./images/media_fb.svg" alt="facebook" />
+                  <img
+                    src="./images/media_fb.svg"
+                    alt="facebook"
+                    width="100%"
+                    height="auto"
+                  />
                 </a>
               </li>
               <li>
@@ -575,7 +597,12 @@
                   href="https://www.instagram.com/Leungsoup?fbclid=IwAR0KPX_0607RWz-Fuo9ja3zRaT7bWzGeNbKjeWF5PGK0wPqtfl8TEw-6k2Y"
                   target="_blank"
                 >
-                  <img src="./images/media_ig.svg" alt="instagram" />
+                  <img
+                    src="./images/media_ig.svg"
+                    alt="instagram"
+                    width="100%"
+                    height="auto"
+                  />
                 </a>
               </li>
             </ul>
@@ -600,14 +627,13 @@
       integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
       crossorigin="anonymous"
     ></script>
-  </body>
 
-  <div id="fb-root"></div>
-  <script
-    async
-    defer
-    crossorigin="anonymous"
-    src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v18.0&appId=968826387459818"
-    nonce="IilMTnyJ"
-  ></script>
+    <script
+      async
+      defer
+      crossorigin="anonymous"
+      src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v18.0&appId=968826387459818"
+      nonce="IilMTnyJ"
+    ></script>
+  </body>
 </html>

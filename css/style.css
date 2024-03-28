@@ -12,7 +12,7 @@ a:hover {
 
 a:hover p,
 a:hover .a_icon path {
-  stroke: #eea127;
+  /* stroke: #eea127; */
   color: #eea127;
 }
 
@@ -50,6 +50,8 @@ section {
   text-decoration: none;
   background-color: #7a583a;
 }
+
+/* 改系統設定 */
 
 /* ------------------------導覽列------------------------ */
 .nav_mobile {
@@ -90,7 +92,7 @@ section {
 
 .dropdown-item:focus,
 .dropdown-item:hover {
-  color: #ffffff;
+  color: #ffffff !important;
   background-color: #e9ecef;
   /* background-color: #eea127; */
   background-color: #7a583a;
@@ -163,7 +165,7 @@ section {
   gap: 30px;
 }
 .blogger_content li a {
-  color: #fff;
+  color: #fff !important;
 }
 
 .blogger_content li:nth-child(1) {
@@ -197,7 +199,8 @@ section {
 }
 
 .blogger_content li:hover a {
-  color: #633d17;
+  color: #633d17 !important;
+  font-weight: 700;
 }
 
 /* ------------------------YOUTUBE------------------------ */
@@ -213,7 +216,7 @@ section {
   padding-bottom: 56.25%;
 }
 
-iframe {
+.youtube iframe {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -268,7 +271,11 @@ footer {
 
 @media (max-width: 1400px) {
 }
-@media (max-width: 1200px) {
+@media (max-width: 1160px) {
+  .footer_nav {
+    display: flex;
+    gap: 5px;
+}
 }
 @media (max-width: 1024px) {
   /* ------------------------字體大小------------------------ */
@@ -288,6 +295,10 @@ footer {
   .blogger_content li {
     height: 270px;
   }
+  .blogger_content li a {
+    color: #fff !important;
+    font-size: 13px !important;
+  }
   /* ------------------------footer------------------------ */
   .footer_block {
     flex-direction: column;
@@ -296,6 +307,8 @@ footer {
   }
   .footer_nav {
     font-size: 13px;
+    gap: 20px;
+
   }
   .footer_info {
     align-items: center;
@@ -322,6 +335,7 @@ footer {
   }
   /* ------------------------部落格------------------------ */
   .blogger_content li {
+    font-size: 12px;
     height: 240px;
   }
   .blogger_firsttext {
@@ -330,7 +344,12 @@ footer {
   .bloger_title {
     gap: 20px;
   }
+  .blogger_content li a {
+    color: #fff !important;
+    font-size: 12px !important;
+  }
 }
+
 
 @media (max-width: 767px) {
   /* ------------------------導覽列------------------------ */
@@ -374,11 +393,21 @@ footer {
     border-left: 1px solid #4d4d4d;
     padding: 0.5rem 0.3rem;
   }
-  /* 麵包屑 */
+
+  /* 改系統設定 */
+  .nav-link:hover {
+    text-decoration: none !important;
+  }
+  /* ------------------------麵包屑------------------------ */
   .breadcrumb {
     font-size: 13px;
     padding: 0.15rem;
     padding-left: 0.2rem;
+  }
+
+  /* 改系統設定 */
+  .breadcrumb a {
+    font-size: 13px !important;
   }
 
   .offcanvas-header {
